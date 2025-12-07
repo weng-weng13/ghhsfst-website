@@ -86,26 +86,40 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
-    .timeline ul {
+    .timeline-container {
       position: relative;
-      padding-left: 40px;
+      margin-left: 20px;
+      padding-left: 20px;
+      border-left: 3px solid #6bbce8;
     }
-
-    .timeline li {
-      margin-bottom: 30px;
+    
+    .timeline-item {
       position: relative;
+      margin-bottom: 40px;
     }
-
-    .timeline li::before {
-      content: '';
-      position: absolute;
-      left: -20px;
-      top: 0;
-      width: 10px;
-      height: 10px;
+    
+    .timeline-circle {
+      width: 14px;
+      height: 14px;
       background: #6bbce8;
       border-radius: 50%;
+      position: absolute;
+      left: -8px;
+      top: 5px;
     }
+    
+    .timeline-content h3 {
+      margin: 0 0 5px 0;
+      font-size: 1.2rem;
+      color: #0a2a43;
+    }
+    
+    .timeline-content p {
+      margin: 0;
+      font-size: 1rem;
+      color: #0a2a43;
+    }
+
 
     footer {
       background: #0a2a43;
@@ -159,21 +173,39 @@
   </section>
 
   <section class="timeline">
-    <h2 class="section-title">Past Events & Highlights</h2>
-    <ul>
-      <li><strong>2025 Sectionals:</strong> 2nd Place National Team Sweepstakes</li>
-      <li><strong>2024 Sectionals:</strong> 3rd Place National Team Sweepstakes</li>
-      <li><strong>2024 Local Showcase:</strong> Community ice exhibition</li>
-      <li><strong>2023 Team Formation:</strong> First team season, growing to 17 skaters</li>
-      <!-- Add more events as needed -->
-    </ul>
-  </section>
+  <h2 class="section-title">Past Events & Highlights</h2>
+  <div class="timeline-container">
+    <div class="timeline-item">
+      <div class="timeline-circle"></div>
+      <div class="timeline-content">
+        <h3>2025 Sectionals</h3>
+        <p>2nd Place National Team Sweepstakes</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-circle"></div>
+      <div class="timeline-content">
+        <h3>2024 Sectionals</h3>
+        <p>3rd Place National Team Sweepstakes</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-circle"></div>
+      <div class="timeline-content">
+        <h3>2024 Local Showcase</h3>
+        <p>Community ice exhibition</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-circle"></div>
+      <div class="timeline-content">
+        <h3>2023 Team Formation</h3>
+        <p>First team season, growing to 17 skaters</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <section class="instagram">
-    <h2 class="section-title">Follow Us</h2>
-    <p>See team updates, photos, and announcements:</p>
-    <a href="https://www.instagram.com/greathoustonteam/" target="_blank">@greathoustonteam on Instagram</a>
-  </section>
 
   <footer>
     © 2025 Great Houston High School Figure Skating Team<br>
