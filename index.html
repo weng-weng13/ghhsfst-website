@@ -48,12 +48,12 @@
       max-width: 700px;
     }
 
-    .achievements ul, .info ul {
+    .achievements ul, .info ul, .timeline ul {
       list-style: none;
       padding: 0;
     }
 
-    .achievements li, .info li {
+    .achievements li, .info li, .timeline li {
       margin: 10px 0;
       padding-left: 15px;
       border-left: 3px solid #6bbce8;
@@ -71,6 +71,40 @@
       border-radius: 8px;
       text-decoration: none;
       font-size: 1.1rem;
+    }
+
+    .team-photos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .team-photos img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .timeline ul {
+      position: relative;
+      padding-left: 40px;
+    }
+
+    .timeline li {
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .timeline li::before {
+      content: '';
+      position: absolute;
+      left: -20px;
+      top: 0;
+      width: 10px;
+      height: 10px;
+      background: #6bbce8;
+      border-radius: 50%;
     }
 
     footer {
@@ -98,7 +132,7 @@
     <h2 class="section-title">About Our Team</h2>
     <ul>
       <li>17 competitive skaters across Houston-area high schools.</li>
-      <li>Nonprofit team focused on expanding access to a traditionally high‑cost sport.</li>
+      <li>Nonprofit team focused on expanding access to a traditionally high-cost sport.</li>
       <li>Compete annually at the Midwest/Pacific Coast Sectional High School Finals.</li>
       <li>Support athletes with training, travel, and competition resources.</li>
     </ul>
@@ -111,6 +145,27 @@
       <li>3rd Place – National Team Sweepstakes</li>
       <li>Competed at the largest high school skating competition in the U.S.</li>
       <li>Represented Houston on a semi-national competitive stage.</li>
+    </ul>
+  </section>
+
+  <section class="team-photos">
+    <h2 class="section-title">Our Team</h2>
+    <div class="team-photos">
+      <img src="team1.jpg" alt="Team Member 1">
+      <img src="team2.jpg" alt="Team Member 2">
+      <img src="team3.jpg" alt="Team Member 3">
+      <!-- Add more images as needed -->
+    </div>
+  </section>
+
+  <section class="timeline">
+    <h2 class="section-title">Past Events & Highlights</h2>
+    <ul>
+      <li><strong>2025 Sectionals:</strong> 2nd Place National Team Sweepstakes</li>
+      <li><strong>2024 Sectionals:</strong> 3rd Place National Team Sweepstakes</li>
+      <li><strong>2024 Local Showcase:</strong> Community ice exhibition</li>
+      <li><strong>2023 Team Formation:</strong> First team season, growing to 17 skaters</li>
+      <!-- Add more events as needed -->
     </ul>
   </section>
 
